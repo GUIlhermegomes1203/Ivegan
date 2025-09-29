@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #95db4f;
+    font-family: 'Poppins';
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;    
+  }
+
+  .container h5 {
+    color: white;
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    padding: 8px 15px;
+  }
+
+  .container img{
+    max-width: 100%;
+    height: auto;
+  }
