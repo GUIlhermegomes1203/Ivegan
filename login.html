@@ -8,29 +8,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+
     <div class="container">
-      <img src="/img/ivegan_logo-transparent.png">
-      <h5>O delivery 100% vegano</h5>
+
+      <!--lado esquerdo-->
+      <div class="left">
+        <img src="/img/ivegan_logo-transparent.png">
+        <h5>O delivery 100% vegano</h5>
+      </div>
+    
+
+      <!--lado direito-->
+      <div class="right">
+        <div class="login-box">
+          <h2 class="login-title">Login</h2>
+          <p class="login-subtitle">entre para continuar</p>
+          
+          <form class="login-box">
+            <label for="email">Email</label>
+          <br>
+            <input type="email" id="email" placeholder="exemplo-email@gmail.com" required>
+          <br>
+            <label for="senha">Senha</label>
+          <br>
+            <input type="password" id="senha" placeholder="*****" required>
+          <br>
+            <button type="submit" class="btn-entrar">entrar</button>
+          </form>
+
+            <p class="cadastro">Não tem conta?
+          <br>
+            <a href="/registro.html">Cadastre-se</a></p>
+        </div>
+      </div>
     </div>
-
-    <div class="right">
-      <h2 class="login-title">Login</h2>
-      <p class="login-subtitle">entre para continuar</p>
-      
-      <form class="login-form">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="exemplo-email@gmail.com" required>
-
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="*****" required>
-
-        <button type="submit" class="btn-entrar">entrar</button>
-      </form>
-
-      <p class="cadastro">Não tem conta? <a href="/registro.html">Cadastre-se</a></p>
-    </div>
-  </div>
 
 
 </body>

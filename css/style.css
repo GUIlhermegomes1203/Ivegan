@@ -22,12 +22,13 @@ body {
     -1px  1px 0 #205a00,
      1px  1px 0 #205a00;
     padding: 8px 15px;
+    border-radius: 25px;
   }
 
   .navbar a:hover {
     background-color: #346900;
     border-radius: 25px;
-    transition: 0.2s;
+    transition: 0.3s;
   }
 
   .nav-links {
@@ -74,29 +75,3 @@ body {
     padding-top: 20px;
   }
 }
-
-
-  .container {
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;  
-    align-items: center;      
-    text-align: center;
-    min-height: 100vh;        
-  }
-
-  .container h5 {
-    color: white;
-    text-decoration: none;
-    text-shadow: 
-    -1px -1px 0 #205a00,
-     1px -1px 0 #205a00,
-    -1px  1px 0 #205a00,
-     1px  1px 0 #205a00;
-    padding: 8px 15px;
-  }
-
-  .container img{
-    max-width: 100%;
-    height: auto;
-  }

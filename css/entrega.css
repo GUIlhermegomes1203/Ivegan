@@ -27,7 +27,7 @@ body {
   .navbar a:hover {
     background-color: #346900;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
     border-radius: 30px;
   }
 
