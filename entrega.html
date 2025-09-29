@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/entrega.css">
+    <title>Entrega</title>
+</head>
+<body>
+
+        <div class="navbar">
+                <img src="https://media.canva.com/v2/image-resize/format:PNG/height:123/quality:100/uri:ifs%3A%2F%2FM%2F5886bdd0-3e1b-4c15-9278-32b37804cc3f/watermark:F/width:481?csig=AAAAAAAAAAAAAAAAAAAAAO77u1LSzZyga3KevnM2K3-CsayAhBDAPL9xNd4f0iIA&exp=1758846462&osig=AAAAAAAAAAAAAAAAAAAAAFC72UD4rWo6bnYBYI-HfZtMbbItsy5-uun33sbJo8yJ&signer=media-rpc&x-canva-quality=thumbnail_large" height="35px">
+                <a href="/home.html">Home</a></li>
+                <a href="/sobre.html">Sobre</a></li>
+                <a href="/mercado.html">Mercado</a></li>
+                <a href="/entrega.html">Entrega</a></li>
+                <a href="/pedidos.html">Pedidos</a></li>
+    
+                <!--login-->
+
+            <div class="navbar-item-login">
+                <a href="/login.html" class="nav-item-login">login</a></li>
+                <a href="/registro.html">Cadastre-se</a></li>
+            </div>
+        </div>
+
+    <form action="/processa-endereco" method="post" >
+  <div class="rua">
+    <label for="rua">Rua:</label>
+    <input type="text" id="rua" name="rua" required>
+  </div>
+
+  <div>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" name="numero" required>
+  </div>
+
+  <div>
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" name="bairro" required>
+  </div>
+
+  <div>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" required>
+  </div>
+
+  <div>
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required>
+      <option value="">-- Selecione o estado --</option>
+      <!-- Adicione mais opções de estados aqui -->
+    </select>
+  </div>
+
+  <div>
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" required>
+  </div>
+
+  <div>
+    <button type="submit">Enviar</button>
+  </div>
+</form>
+
+<div class="mapa">
+    <section class="endereco">
+<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.2382891884049!2d12.444383653824437!3d41.903854282329405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258abd05c6b893%3A0x5c2215c21c6f7fe5!2siVegan!5e0!3m2!1spt-BR!2sbr!4v1758833459597!5m2!1spt-BR!2sbr" width="930" height="850" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"     width="0%" height="0" style="border:0; border-radius:15px;"  allowfullscreen loading="lazy">></iframe></section>
+</div>
+
+
+
+
+</body>
+</html>

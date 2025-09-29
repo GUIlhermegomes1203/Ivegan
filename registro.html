@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>iVegan - Protótipo (HTML + JS + Supabase)</title>
+</head>
+<body>
+  <h1>iVegan - Protótipo</h1>
+
+  <!-- Seção de configuração -->
+  <section>
+    <h2>Configuração Supabase</h2>
+    <p>Insira suas chaves abaixo (não commit em repositório público).</p>
+    <pre id="supaconfig">Coloque SUPABASE_URL e SUPABASE_ANON_KEY nas constantes do script.</pre>
+  </section>
+
+  <!-- Formulário: Registrar usuário -->
+  <section>
+    <h2>Registrar usuário (cliente)</h2>
+    <form id="form-create-user">
+      <input name="name" placeholder="Nome completo" required /><br/>
+      <input name="email" type="email" placeholder="Email" required /><br/>
+      <input name="password" type="password" placeholder="Senha" required /><br/>
+      <input name="phone" placeholder="Telefone" /><br/>
+      <input name="address" placeholder="Endereço" /><br/>
+      <button type="submit">Cadastrar usuário</button>
+    </form>
+    <div id="create-user-result"></div>
+  </section>
+
+  <!-- Formulário: Registrar restaurante -->
+  <section>
+    <h2>Registrar restaurante</h2>
+    <form id="form-create-restaurant">
+      <input name="public_name" placeholder="Nome fantasia (público)" required /><br/>
+      <input name="legal_name" placeholder="Razão social (legal)" required /><br/>
+      <input name="cnpj" placeholder="CNPJ" required /><br/>
+      <input name="phone" placeholder="Telefone" /><br/>
+      <input name="address" placeholder="Endereço" /><br/>
+      <button type="submit">Cadastrar restaurante</button>
+    </form>
+    <div id="create-restaurant-result"></div>
+  </section>
+
+  <!-- Formulário: Cadastrar prato -->
+  <section>
+    <h2>Cadastrar prato</h2>
+    <form id="form-create-dish">
+      <select id="select-restaurant-for-dish" required>
+        <option value="">-- escolha restaurante --</option>
+      </select><br/>
+      <input name="name" placeholder="Nome do prato" required /><br/>
+      <input name="description" placeholder="Descrição" /><br/>
+      <input name="price" type="number" step="0.01" placeholder="Preço (ex: 19.90)" required /><br/>
+      <input name="image_url" placeholder="URL da imagem (opcional)" /><br/>
+      <select name="type">
+        <option value="vegano">Vegano</option>
+        <option value="vegetariano">Vegetariano</option>
+      </select><br/>
+      <button type="submit">Cadastrar prato</button>
+    </form>
+    <div id="create-dish-result"></div>
+  </section>
+
+  <!-- Formulário: Criar entregador -->
+  <section>
+    <h2>Cadastrar entregador</h2>
+    <form id="form-create-deliverer">
+      <input name="name" placeholder="Nome do entregador" required /><br/>
+      <input name="cpf" placeholder="CPF" required /><br/>
+      <select name="vehicle_type">
+        <option value="motocicleta">Motocicleta</option>
+        <option value="carro">Carro</option>
+        <option value="bicicleta">Bicicleta</option>
+      </select><br/>
+      <input name="plate" placeholder="Placa" /><br/>
+      <select name="status">
+        <option value="disponivel">disponível</option>
+        <option value="indisponivel">indisponível</option>
+      </select><br/>
+      <button type="submit">Cadastrar entregador</button>
+    </form>
+    <div id="create-deliverer-result"></div>
+  </section>
+
+  <!-- Formulário: Criar pedido (simplificado) -->
+  <section>
+    <h2>Criar pedido (simplificado)</h2>
+    <p>Itens: use formato comma-separated de dishId:qty — ex: <code>3:2,7:1</code></p>
+    <form id="form-create-order">
+      <select id="select-user-for-order" required><option value="">-- usuário --</option></select><br/>
+      <select id="select-restaurant-for-order" required><option value="">-- restaurante --</option></select><br/>
+      <input name="items" placeholder="items (dishId:qty, ...)" required /><br/>
+      <input name="delivery_address" placeholder="Endereço de entrega" /><br/>
+      <button type="submit">Criar pedido</button>
+    </form>
+    <div id="create-order-result"></div>
+  </section>
