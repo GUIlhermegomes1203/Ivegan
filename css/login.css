@@ -11,9 +11,6 @@ body {
     align-items: center;      
     min-height: 100vh;
     color: white;
-  }
-
-  .container h5 {
     text-shadow: 
     -1px -1px 0 #205a00,
      1px -1px 0 #205a00,

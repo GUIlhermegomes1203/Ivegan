@@ -8,8 +8,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: white;
+    padding: 12px 40px;
     text-decoration: none;
   }
 
@@ -34,14 +34,16 @@ body {
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
   .auth-buttons {
   display: flex;
-  padding: 10px 20px;
-  background-color: white;
-  text-decoration: none;
+  gap: 25px;
+  margin: 0px;
 }
 
   .auth-buttons .login {
@@ -50,17 +52,56 @@ body {
   text-decoration: none;
 }
 
-  .auth-buttons .entrar {
+  .auth-buttons .cadastre-se {
   font-weight: 800;
   color: #8ed94f;
   text-decoration: none;
 }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 50px;
+  }
+
+  .footer li{
+    list-style: none;
+  }
+
+  .footer-right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-right ul {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .footer-left{
+    color: white;
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    text-align: center;
+  }
+
+  .footer-left h5{
+    margin: 0%;
+  }
 
 @media (max-width: 600px) {
 
   .navbar {
       flex-direction: column;
       text-align: center;
+      padding: 20px;
   }
 
   .nav-links {
@@ -70,8 +111,24 @@ body {
   }
 
   .auth-buttons {
+    gap: 10px
+  }
+
+  .footer {
     flex-direction: column;
-    gap: 10px;
-    padding-top: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .footer-left img {
+    display: flex;
+    max-height: 80px;
+    max-width: 100%;
+    height: auto;
   }
 }

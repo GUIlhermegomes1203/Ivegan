@@ -19,6 +19,53 @@
   }
 
   .container img{
+    min-height: 100%;
     max-width: 100%;
     height: auto;
+  }
+
+  .card-mercado{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 5px;
+  }
+
+  .card-mercado-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d9826;
+    color: white;
+    border-radius: 5px;
+    gap: 35px;
+  }
+
+  .card-mercado-left button{
+    background-color: #205a00;
+    border-style: none;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 6px;
+    align-items: center;
+  }
+
+  .card-mercado-left h1{
+    padding: 10px;
+    margin: 0%;
+  }
+
+  .card-mercado-left-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+
   }
