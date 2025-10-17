@@ -5,12 +5,28 @@ body {
   }
 
   .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 12px 40px;
     text-decoration: none;
+    transition-duration: 0.4ms;
+  }
+
+  .navbar {
+    transition: all 0.4s ease;
+  } 
+
+  .navbar:not(.scrolled) {
+    backdrop-filter: none;
+  }
+  
+  .navbar.scrolled {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px 5px #205a00a8;
   }
 
   .navbar a {
@@ -108,6 +124,7 @@ body {
 @media (max-width: 600px) {
 
   .navbar {
+      position: relative;
       flex-direction: column;
       text-align: center;
       padding: 20px;
