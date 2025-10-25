@@ -22,14 +22,21 @@
     min-height: 100%;
   }
 
+  .cards-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    padding: 80px;
+    padding-bottom: 0;
+    gap: 30px;
+  }
+
   .card-mercado{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.356);
     border-radius: 5px;
+    box-shadow: 0 0 10px 5px #205a00a8;
   }
   
   .card-mercado-left{
@@ -44,7 +51,7 @@
 
   .card-mercado-left img{
     display: flex;
-    padding: 35px;
+    padding: 25px;
     gap: 35px;
   }
 
@@ -89,14 +96,24 @@
   }
 
   .card-entrega{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     justify-content: end;
     background-color: rgba(255, 255, 255, 0.356);
     border-radius: 5px;
+    box-shadow: 0 0 10px 5px #205a00a8;
+  }
+
+  .card-entrega-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-weight: 300;
+  }
+
+  .card-entrega-left h1{
+    margin: 0;
   }
 
   .card-entrega-right{
@@ -141,3 +158,103 @@
     padding-left: 15px;
     gap: 90px;
   }
+
+  .cards-re{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding: 80px;
+    gap: 30px;
+  }
+
+  .card-restaurante{
+    display: flex;
+    flex-direction: column;
+    color: white;    
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 200px;
+    width: 445px;
+  }
+
+  .card-restaurante h1{
+    color: white;
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    text-align: center;
+  }
+
+  .card-restaurante p {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .card-restaurante-texto{
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 5px 10px 5px #205a00;
+  }
+
+  .card-entregador{
+    display: flex;
+    flex-direction: column;
+    color: white;    
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 200px;
+    width: 445px; 
+  }
+
+  .card-entregador h1{
+    color: white;
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    text-align: center;
+  }
+
+  .card-entregador p {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .card-entregador-texto{
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    border-top-left-radius: 0 ;
+    border-top-right-radius: 0;
+    box-shadow: 0 5px 10px 5px #205a00;
+  }
+
+  @media (max-width: 1030px) {
+    .card-entrega-left{
+      display: none;
+    }
+
+    .card-mercado-right{
+      display: none;
+    }
+
+    .cards-me{
+      display: flex;
+    }
+
+  }
+
+@media (max-width: 950px){
+  .cards-re{
+    display: flex;
+    flex-direction: column;
+  }
+}

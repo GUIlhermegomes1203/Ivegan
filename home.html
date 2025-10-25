@@ -15,24 +15,35 @@
 <body>
 
     <!--Navbar-->
- 
-        <div class="navbar">
+
+    <div class="navbarshort">
+        <ul class="navbarshort-links">
+            <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>                                
+        </ul>
+    </div>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/sobre.html">Sobre</a></li>
+            <li><a href="/mercado.html">Mercado</a></li>
+            <li><a href="/entrega.html">Entrega</a></li>
+            <li><a href="/pedidos.html">Pedidos</a></li>
+        </ul>
+        <!--login-->
+        <div class="auth-buttons">
             <ul class="nav-links">
-                <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/sobre.html">Sobre</a></li>
-                <li><a href="/mercado.html">Mercado</a></li>
-                <li><a href="/entrega.html">Entrega</a></li>
-                <li><a href="/pedidos.html">Pedidos</a></li>
+                <a href="/login.html" class="login">login</a>
+                <a href="/registro.html" class="cadastre-se">Entrar</a>
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    ✕
+                </button>   
             </ul>
-            <!--login-->
-            <div class="auth-buttons">
-                <ul class="nav-links">
-                    <a href="/login.html" class="login">login</a>
-                    <a href="/registro.html" class="cadastre-se">Entrar</a>
-                </ul>
-            </div>
         </div>
+    </div>
 
     <!--Conteúdo-->
 
@@ -41,41 +52,68 @@
             <h5>O delivery 100% vegano</h5>
         </div>
         
-        <div class="card-mercado">
-            <div class="card-mercado-left"> 
-                <img src="./img/carrinho de verdura.png" height="200px">
-                <div class="card-mercado-left-items">
-                    <h1>Mercado</h1>
-                    <button class="">Ver opções
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
-                        </svg>
-                    </button>
+
+        <div class="cards-me">
+            <div class="card-mercado">
+                <div class="card-mercado-left"> 
+                    <img src="./img/carrinho de verdura.png">
+                    <div class="card-mercado-left-items">
+                        <h1>Mercado</h1>
+                        <button class="">Ver opções
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-mercado-right">
+                    <h1>Adicione itens ao seu carrinho:</h1>
+                    <p>Adicione itens de sua preferencia ao seu carrinho e realize uma compra.
+                        Seus itens terão o valor contabilizado automaticamente ao serem adicionados ao carrinho.
+                        Escolha a sua forma de pagamento e seu endereço de entrega e seu pedido estará pronto para o envio</p>
+                    </div>
+            </div>
+
+            <div class="card-entrega">
+                <div class="card-entrega-left">
+                    <h1>Faça um pedido para entrega:</h1>
+                    <p>Faça um pedido para pronta entrega.
+                        Seus itens terão o valor contabilizado automaticamente ao serem adicionados ao carrinho.
+                        Escolha a sua forma de pagamento e seu endereço de entrega e seu pedido estará pronto para o envio</p>
+                </div>
+                <div class="card-entrega-right"> 
+                    <div class="card-entrega-right-items">
+                        <h1>Entrega</h1>
+                        <button class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                            </svg>
+                            Ver opções
+                        </button>
+                    </div>
+                    <img src="./img/aborgue.png">                
                 </div>
             </div>
-            <div class="card-mercado-right">
-                <h1>Adicione itens ao seu carrinho:</h1>
-                <p>Adicione itens de sua preferencia ao seu carrinho e realize uma compra..
-                    Seus itens terão o valor contabilizado automaticamente ao serem adicionados ao carrinho.
-                    Escolha a sua forma de pagamento e seu endereço de entrega e seu pedido estará pronto para o envio</p>
-                </div>
         </div>
 
-        <div class="card-entrega">
-            <div class="">
-                <h1></h1>
-            </div>
-            <div class="card-entrega-right"> 
-                <div class="card-entrega-right-items">
-                    <h1>Entrega</h1>
-                    <button class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
-                        </svg>
-                        Ver opções
-                    </button>
+        <div class="cards-re">
+            <div class="card-restaurante">
+                <h1>Cadastrar Restaurante</h1>
+                <div class="card-restaurante-texto">
+                    <p>Tem um restaurante?
+                        <br>
+                        Ótimo! Cadastre-se como restaurante e venda seus produtos aqui.
+                    </p>
                 </div>
-                <img src="./img/aborgue.png" height="200px">                
+            </div>
+            <div class="card-entregador">
+                <h1>Cadastrar Entregador</h1>
+                <div class="card-entregador-texto">
+                    <p>Quer ser entregador?
+                        <br>
+                        Cadastre-se como entregador e comece a fazer entregas.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -127,6 +165,7 @@
     </div>
 
     <script src="/js/navbar.js"></script>
+    
 </body>
 
 </html>

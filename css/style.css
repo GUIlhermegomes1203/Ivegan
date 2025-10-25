@@ -4,6 +4,21 @@ body {
     font-family: 'Poppins';
   }
 
+  .navbarshort {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.4s ease;
+  }
+  
+  .navbarshort:not(.scrolled) {
+    backdrop-filter: none;
+  }
+  
+  .navbarshort.scrolled {
+    box-shadow: 0 0 10px 5px #205a00a8;;
+  }
   .navbar {
     position: sticky;
     top: 0;
@@ -14,18 +29,14 @@ body {
     padding: 12px 40px;
     text-decoration: none;
     transition-duration: 0.4ms;
-  }
-
-  .navbar {
     transition: all 0.4s ease;
-  } 
+  }
 
   .navbar:not(.scrolled) {
     backdrop-filter: none;
   }
   
   .navbar.scrolled {
-    backdrop-filter: blur(10px);
     box-shadow: 0 0 10px 5px #205a00a8;
   }
 
@@ -72,6 +83,10 @@ body {
   font-weight: 800;
   color: #8ed94f;
   text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
 }
 
   .footer {
@@ -121,25 +136,68 @@ body {
     margin: 0%;
   }
 
-@media (max-width: 600px) {
-
+@media (max-width: 890px) {
+  .navbarshort {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 40px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  
+  .navbarshort-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
   .navbar {
-      position: relative;
-      flex-direction: column;
-      text-align: center;
-      padding: 20px;
+    display: none;
+    position: sticky;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
   }
-
+  
+  .navbar.mobile-active {
+    display: flex;
+  }
+  
   .nav-links {
-      flex-direction: column;
-      gap: 10px;
-      padding-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
   }
-
+  
   .auth-buttons {
-    gap: 10px
+    gap: 10px;
   }
 
+  .menu-toggle {
+    display: flex ;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    padding: 5px;
+  }
+  
   .footer {
     flex-direction: column;
     text-align: center;
