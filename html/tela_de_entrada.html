@@ -1,75 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mercado</title>
-        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-        <link href="/css/style.css" rel="stylesheet">
-    </head>
-    
-    <body>
-    
-        <!--Navbar-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo ao Ivegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="icon" href="/img/0002-removebg-preview (1).png">
+    <link href="/css/tela_ent.css" rel="stylesheet">
+</head>
+<body>   
 
-        <div class="navbarshort">
-            <ul class="navbarshort-links">
-                <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
-                <button class="menu-toggle" aria-label="Abrir menu">
-                    ☰
-                </button>                                
-            </ul>
-        </div>
-        <div class="navbar">
+    <!--navbar-->
+
+    <div class="navbarshort">
+        <ul class="navbarshort-links">
+            <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>                                
+        </ul>
+    </div>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
+        </ul>
+        <!--login-->
+        <div class="auth-buttons">
             <ul class="nav-links">
-                <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./mercado.html">Mercado</a></li>
-                <li><a href="./entrega.html">Entrega</a></li>
-                <li><a href="./pedidos.html">Pedidos</a></li>
+                <a href="/login.html" class="login">login</a>
+                <a href="/registro.html" class="cadastre-se">Entrar</a>
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    ✕
+                </button>   
             </ul>
-            <!--login-->
-            <div class="auth-buttons">
-                <ul class="nav-links">
-                    <a href="./login.html" class="login">login</a>
-                    <a href="./registro.html" class="cadastre-se">Entrar</a>
-                    <button class="menu-toggle" aria-label="Abrir menu">
-                        ✕
-                    </button>   
-                </ul>
+        </div>
+    </div>
+
+    <!--Conteúdo-->
+
+    <div class="cards-me">
+        <div class="card-mercado">
+            <div class="card-mercado-left"> 
+                <img src="/img/carrinho de verdura.png">
+                <div class="card-mercado-left-items">
+                    <h1>Mercado</h1>
+                    <button class="">
+                        Faça login
+                        <br>para ver mais
+                        <br>opções
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-mercado-right">
             </div>
         </div>
-    
-        <!--Conteúdo-->
 
-            <div class="carrinho">
-                <a href="/carrinho.html"><img src="" alt="Carrinho"></a>
+        <div class="card-entrega">
+            <div class="card-entrega-left">
             </div>
+            <div class="card-entrega-right"> 
+                <div class="card-entrega-right-items">
+                    <h1>Entrega</h1>
+                    <button class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                        </svg>
+                        Faça login
+                    <br>para ver mais
+                    <br>opções
+                    </button>
+                </div>
+                <img src="/img/aborgue.png">                
+            </div>
+        </div>
+    </div>
 
-      <!--Footer-->
+    <div class="cards-re">
+        <div class="card-restaurante">
+            <h1>Cadastrar Restaurante</h1>
+            <div class="card-restaurante-texto">
+                <p>Tem um restaurante?
+                    <br>
+                    Ótimo! Cadastre-se como restaurante e venda seus produtos aqui.
+                </p>
+            </div>
+        </div>
+        <div class="card-entregador">
+            <h1>Cadastrar Entregador</h1>
+            <div class="card-entregador-texto">
+                <p>Quer ser entregador?
+                    <br>
+                    Cadastre-se como entregador e comece a fazer entregas.
+                </p>
+            </div>
+        </div>
+    </div>
 
-      <div class="footer">
+    <!--footer-->
+
+    <div class="footer">
         <div class="footer-left">
             <img class="footer-left-img" src="/img/ivegan_logo-transparent.png" height="80px">
             <h5>O delivery 100% vegano</h5>
         </div>
         <div class="footer-right">
             <ul class="">
-                <li><a class=""></a>Ivegan</li>
+                <li>Ivegan</li>
                 <li><a href="#">Privacidade</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Entregador</a></li>
             </ul>
             <ul>
-                <li><a class=""></a>Links Importantes</li>
+                <li>Links Importantes</li>
                 <li><a href="#">teste</a></li>
                 <li><a href="#">teste</a></li>
                 <li><a href="#">teste</a></li>
             </ul>
             <ul>
-                <li><a class="">Social</a></li>
+                <li>Social</li>
                 <li><a href="#">
                         <svg width="48" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_17_24)">
@@ -96,6 +149,6 @@
     </div>
 
     <script src="/js/navbar.js"></script>
-    
+
 </body>
 </html>
